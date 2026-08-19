@@ -1,11 +1,11 @@
 # GoBag
 
-A packing app built around **reusable templates** — for week-long trips and for
-just heading to the pool.
+A packing app built around **reusable bags** — for week-long trips and for just
+heading to the pool.
 
-Make a template once (Swimming, Beach day, Camping, Week in Europe), then start a
-**pack** from it whenever you go. Tick things off as they go in the bag. When you
-get home, hit *Unpack all* and the same list is ready for next time.
+Make a **bag** once (Swimming, Beach day, Camping, Week in Europe), then start a
+**go** from it whenever you head out. Tick things off as they're packed. When you
+get home, hit *Unpack all* and the same list is ready for the next go.
 
 It's a Progressive Web App: plain HTML/CSS/JS, no build step, no dependencies. It
 installs to your home screen and works with no signal — which matters, because
@@ -34,14 +34,14 @@ Once installed it opens full-screen with no browser chrome.
 
 ## How it works
 
-**Templates** are the reusable lists. **Packs** are the working copies you
-actually tick off, so checking something off never touches the template.
+**Bags** are the reusable lists. **Gos** are the working copies you actually
+tick off, so checking something off never touches the bag it came from.
 
-Starting a pack from more than one template merges them and drops duplicates —
-pick Swimming + Beach day and you get one "Swimsuit", not two. Sections with the
-same name merge together.
+Starting a go from more than one bag merges them and drops duplicates — pick
+Swimming + Beach day and you get one "Swimsuit", not two. Sections with the same
+name merge together.
 
-Templates are edited as plain text, one item per line. A line starting with `#`
+Bags are edited as plain text, one item per line. A line starting with `#`
 begins a new section:
 
 ```
@@ -58,7 +58,7 @@ Wine
 ```
 
 Everything is stored in `localStorage` on the device. There's no account, no
-server, and no sync — which also means clearing site data wipes your templates.
+server, and no sync — which also means clearing site data wipes your bags.
 
 ## Files
 
@@ -91,6 +91,6 @@ up the new version instead of serving the old one from cache.
 ## Ideas for later
 
 - Reordering items by drag
-- A "what did I forget?" prompt that suggests items from similar past packs
-- Export/import so templates survive a wiped browser
-- Weather-aware suggestions for trip packs
+- A "what did I forget?" prompt that suggests items from similar past gos
+- Export/import so bags survive a wiped browser
+- Weather-aware suggestions for trip gos

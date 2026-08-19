@@ -1,6 +1,6 @@
 /* GoBag service worker — app shell caching so the app opens offline. */
 
-const CACHE = 'gobag-v1';
+const CACHE = 'gobag-v2';
 
 const ASSETS = [
   './',
