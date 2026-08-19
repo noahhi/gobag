@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Scratch dir used while regenerating icons (see README)
+icons/.tmp/
